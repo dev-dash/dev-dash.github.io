@@ -1,0 +1,82 @@
+* {
+    color: #eee;
+    font-size: 30px;
+}
+
+.bg {
+    background-color:gold;
+    background-image: linear-gradient(
+        45deg,
+        #5C0991,
+        #B78727,
+        #CE9A02,
+        #AC002B,
+        #CC0234,
+        #DC173E
+    );
+    background-size: 400%;
+    animation: bg-animation 10s infinite alternate ease-in-out;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+.container {
+    position: fixed;
+    padding-left: 25px;
+    border-radius: 10px 10px 10px 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loadbar {
+    width: 100%;
+    background-color: white;
+    height: 20px;
+    
+    border-radius: 5px 5px 5px 5px;
+
+    margin-left: 2px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    overflow: hidden;
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+
+.progressBar {
+    width: 10%;
+    background-color: crimson;
+    height: 20px;
+    position: absolute;
+    left: 10%;
+}
+
+.Dlogo {
+    position: absolute;
+    margin-left: 30px;
+    bottom: 70px;
+}
+
+#dash {
+    
+    animation: logo 4s infinite linear alternate;
+    transform-origin: center;
+}
+
+@keyframes logo {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
