@@ -55,6 +55,7 @@ header {
 
 
 p {
+    font-family: 'Krona One', sans-serif;
     translate: 200px 50px;
     text-align: center;
     font-size: xx-large;
@@ -79,4 +80,13 @@ li {
     justify-content: center;
     font-family: 'Krona One', sans-serif;
     position: relative;
+}
+
+h1 {
+    font-family: 'Krona One', sans-serif;
+    margin-bottom: 10px;
+}
+.ttv {
+   margin: 0 auto;
+   border: 20px ridge violet;
 }
