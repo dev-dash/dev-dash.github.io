@@ -3,42 +3,44 @@
     margin: 0;
     padding: 0;
 }
-header {
+
+.FP {
     background-image: linear-gradient(
-        45deg,
-        #5C0991,
-        #B78727,
-        #CE9A02,
-        #AC002B,
-        #CC0234,
-        #DC173E
+        35deg,
+        #00008b 50%,
+        #800020 50%
     );
     
     height: 100%;
-    width: 200%;
-    animation: bg-animation 10s infinite alternate ease-in-out;
+    width: 100%;
 }
 
-@keyframes bg-animation {
-    0% {background-position: left;}
-    100% {background-position: right;}
+.SP {
+    background-image: linear-gradient(
+        35deg,
+        #800020 50%,
+        #00008b 50%
+    );
+    
+    height: 100%;
+    width: 100%;
 }
 
-.logo img {
+.dvsh {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    top: 10%;
+    left: 25%;
 }
 
-.Dlogo {
-    position: absolute;
-    margin-left: 30px;
-    bottom: 70px;
+.wings {
+    margin-left: 2px;
+    bottom: 100px;
+    width: 150px;
 }
 
-#dash {
+#rotate {
     
     animation: logo 4s infinite linear alternate;
     transform-origin: center;
@@ -54,39 +56,34 @@ header {
 }
 
 
-p {
-    font-family: 'Krona One', sans-serif;
-    translate: 200px 50px;
-    text-align: center;
-    font-size: xx-large;
-}
-
-section {
-    background:rgb(236, 152, 152);
-    padding: 20px;
-    
+.menu {
+    padding-top: 40px;
 }
 
 ul {
     margin: 0;    
     padding: 0;
     list-style-type: none;
-    
+    vertical-align: top;
 }
 
 li {
     display: inline-block;
-    padding: 0 150px 0 170px;
+    padding: 0 150px 0 95px;
     justify-content: center;
     font-family: 'Krona One', sans-serif;
+    font-size: 20px;
     position: relative;
 }
 
+.twitch {
+    padding-top: 30px;
+}
 h1 {
     font-family: 'Krona One', sans-serif;
     margin-bottom: 10px;
 }
 .ttv {
-   margin: 0 auto;
-   border: 20px ridge violet;
+    padding-top: 30px;
+    margin: 0 auto;
 }
